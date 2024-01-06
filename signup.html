@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="style sheets" href="resigter">
+    <script type="text/javascript">
+        function msg(){
+         alert("Registered Succesfully");
+        }
+     </script>
+</head>
+
+<body>
+    <div class="container">
+       <div class="menu-bar">
+        <ul>
+           <img style="height:100px;width:130px;" src="image/logo.png" alt="">
+            <li class="active" ><a href="library.html">Home</a></li>
+            <li><a href="#">About</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="missionvision.html">mission</a></li>
+                    <li><a href="missionvision.html">vision</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </div>
+            </li>
+            <li> <a href="#"></i>Categories</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Business</a></li>
+                        <li class="hover-me"><a href="#">Entertainment</a><i class="fa fa-angle-right"></i>
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li><a href="kids.html">Kids</a></li>
+                                <li><a href="food.html">Food</a></li>
+                                <li><a href="comic.html">Comics</a></li>
+                            </ul>  
+                        </div>
+                        </li>
+                        <li class="hover-me"><a href="#">Historic</a><i class="fa fa-angle-right"></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="medievel.html">Medievel</a></li>
+                                    <li><a href="modern.html">Modern</a></li>
+                                    <li><a href="#">Early</a></li>
+                                </ul>  
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li> <a href="contact.html">Contact us</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Rajarajeshwari Nagar Bengaluru-560098.</a></li>
+                        <li><a href="#">8880008881</a></li>
+                        <li><a href="#">library@gmail.com</a></li>
+                    </ul>
+                </div></li>
+            <li> <a href="#">Cart</a></li>
+            <li> <a href="login.html">Login</a></li>
+            <li> <a href="signup.html">Signup</a></li>
+        </ul>
+            </div>
+    <div class="box">
+        <h1 style="color: white; font-weight: bolder; padding-left: 190px; padding-bottom:10px;">SIGN UP</h1>
+        <div style="padding-left: 90px;color: white;font-weight: bolder;">
+            <form action="#">
+            Firstname
+           <input type="text" name="" id="" required style="padding: 4px 40px ;"><br><br><br>
+           Lastname
+           <input type="text" name="" id="" required style="padding: 4px 40px;"><br><br><br>
+           E-mail
+           <input type="email" name="" id="" required style="padding: 4px 40px;margin-left: 18px;"><br><br><br>
+           Phone No
+           <input type="number" name="" id="" required style="padding: 4px 40px;"><br><br><br>
+           Password
+           <input type="password" name="" id="" required style="padding: 4px 40px;"><br><br> 
+           <input type="submit" value="Submit"  style="padding: 4px 105px; margin-left: 70px;background-color: rgb(4, 20, 68);color: white;font-weight: bold; border: none; border-radius: px;">
+
+
+        </div>
+    </form>
+    </div>
+    <div class="fotter">
+        <div class="follow-text"> <h3>Follow us</h3></div>
+      <div class="images">
+        <img src="image/facebook.png" alt="facebook">
+        <img src="image/twitter.png" alt="facebook">
+        <img src="image/search.png" alt="facebook">
+      </div>
+      <div class="contact"><h4>Contatct Address</h4></div>
+      <div class="adress-text">
+      <i class="fa-sharp fa-solid fa-house"></i>
+    Rajarajeshwari Nagar Bengaluru-560098
+    <i class="fa-sharp fa-solid fa-phone"></i>
+    8880008881,9990008883
+    <i class="fa-sharp fa-solid fa-envelope"></i>
+    mylibrary124@gmail.com
+    </div>
+    </div>
+    
+       
+        <style>
+            body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.menu-bar{
+    background-color:black;
+    /* text-align: center; */
+    position: sticky;
+    top: 0px;
+    
+}
+.menu-bar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+    
+}
+.menu-bar ul li{
+   width: 120px; 
+   margin:15px;
+   padding:15px;
+   font-size:20px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:skyblue;
+    
+}
+.menu-bar ul li a:hover{
+background-color:black;
+border-radius: 3px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+display: block;
+position: absolute;
+background-color:black;
+margin-top: 15px;
+margin-left: 15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: orange;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: black;
+}
+            .box{
+                height: 400px;
+                width: 500px;
+                margin-left: 410px;
+                margin-top: 100px;
+                padding: 30px;
+                justify-content: center;
+                border-radius: 10px;
+                 background-color:  rgb(69, 106, 182); 
+                 align-items: center;
+                 
+            }
+           .container{
+            background-image: url(image/library.jpeg);
+            background-size: cover;
+            height:1000px;
+            border: 2px solid black;
+           } 
+            /* -------------fotter------------ */
+            
+            .fotter{
+                height: 180px;
+                width: 100%;
+                background-color:black;
+                margin-top:140px;
+            }
+            .follow-text{
+        padding-top:0.1px;
+        padding-left: 45%;
+        color: white;
+        font-weight: bolder;
+        }
+        .images{
+            display: flex;
+            padding-left: 35%;
+        }
+        .images img{
+            height: 20px;
+            width: 30px;
+            padding-left: 63px;
+        }
+        .contact{
+            margin-left: 43%;
+            margin-bottom: 0px;
+            color: white;
+        font-weight: bolder;
+        }
+        .adress-text{
+        margin-left: 24%;
+        margin-top: 1px;
+        color: white;
+        font-weight: bolder;
+        }
+        i{
+            padding: 8px;
+        }
+</style>
+
+</body>
+

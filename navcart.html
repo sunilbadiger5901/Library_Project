@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>navcart.html</title>
+  <script src="https://kit.fontawesome.com/fef843a56a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container"
+  style="height: 1060px;border: 2px solid black;
+    background-image: url(image/backgrndimage.avif);
+    background-size: cover;">
+    <div class="menu-bar">
+      <ul>
+         <img style="height:100px;width:130px;" src="image/logo.png" alt="">
+          <li class="active" ><a href="library.html">Home</a></li>
+          <li><a href="library.html">About</a>
+          <div class="sub-menu-1">
+              <ul>
+                  <li><a href="missionvision.html">mission</a></li>
+                  <li><a href="missionvision.html">vision</a></li>
+                  <li><a href="news.html">News</a></li>
+              </ul>
+          </div>
+          </li>
+          <li> <a href="#"></i>Categories</a>
+              <div class="sub-menu-1">
+                  <ul>
+                      <li><a href="business.html">Business</a></li>
+                      <li class="hover-me"><a href="#">Entertainment</a><i class="fa fa-angle-right"></i>
+                      <div class="sub-menu-2">
+                          <ul>
+                              <li><a href="kids.html">Kids</a></li>
+                              <li><a href="food.html">Food</a></li>
+                              <li><a href="comic.html">Comics</a></li>
+                          </ul>  
+                      </div>
+                      </li>
+                      <li class="hover-me"><a href="#">Historic</a><i class="fa fa-angle-right"></i>
+                          <div class="sub-menu-2">
+                              <ul>
+                                  <li><a href="medievel.html">Medievel</a></li>
+                                  <li><a href="modern.html">Modern</a></li>
+                                  <li><a href="#">Early</a></li>
+                              </ul>  
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </li>
+          <li> <a href="contact.html">Contact us</a>
+              <div class="sub-menu-1">
+                  <ul>
+                      <li><a href="#">Rajarajeshwari Nagar Bengaluru-560098.</a></li>
+                      <li><a href="#">8880008881</a></li>
+                      <li><a href="#">library@gmail.com</a></li>
+                  </ul>
+              </div></li>
+          <li> <a href="#">Cart</a></li>
+          <li> <a href="login.html">Login</a></li>
+          <li> <a href="signup.html">Signup</a></li>
+      </ul>
+          </div>
+          <div class="cartpage">
+          <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <td>
+               <div class="cartimage">
+                <img src="image/business2.jpg" alt="" >
+                <div>
+                    <p>Business book</p>
+                    <small>Price : $100.00</small><br>
+                    <a href="">Remove</a>
+                </div>
+               </div>
+
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$100.00</td>
+        </tr>
+        <td>
+           <div class="cartimage">
+            <img src="image/medivel1.jpg" alt="" >
+            <div>
+                <p>Medievel History Book</p>
+                <small>Price : $100.00</small><br>
+                <a href="">Remove</a>
+            </div>
+           </div>
+
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$100.00</td>
+    </tr>
+    <td>
+       <div class="cartimage">
+        <img src="image/food1.jpeg" alt="" >
+        <div>
+            <p>Food Book</p>
+            <small>Price : $100.00</small><br>
+            <a href="">Remove</a>
+        </div>
+       </div>
+
+    </td>
+    <td><input type="number" value="1"></td>
+    <td>$100.00</td>
+            
+          </table>
+
+          <div class="totalprice">
+            <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$300.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$35.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$335.00</td>
+            </tr>
+            </table>
+          </div>
+          </div>
+          <div class="fotter">
+            <div class="followus">
+              Follow Us On
+            </div>
+              <div class="sociallogos">
+                <div class="logosc">
+                  <a href="https://www.facebook.com/"><img src="/image/facebook.png" alt="facebook" style="height:30px;width: 40px;"></a>
+                </div>
+                <div class="logosc">
+                  <a href="https://twitter.com/"><img src="/image/twitter.png" alt="twitter"style="height:30px;width: 40px;"></a>
+                </div>
+                <div class="logosc">
+                 <a href="https://www.google.com/"><img src="/image/search.png" alt="google"style="height:30px;width: 40px;"></a>
+                </div>
+              </div>
+              <div class="address"><h3>Contact Address</h3></div>
+              <div class="homeicon">
+                <i class="fa-sharp fa-solid fa-house"></i>
+                    Rajarajeshwari Nagar Bengaluru-560098.
+              </div>
+              <div class="homeicon">
+                <i class="fa-sharp fa-solid fa-phone"></i>
+                    8880008881,9990008883
+              </div>
+              <div class="homeicon">
+                <i class="fa-sharp fa-solid fa-envelope"></i>
+                    mylibrary124@gmail.com
+              </div>
+           </div>
+           
+              </div>
+          
+
+
+          <style>
+             body{
+    box-sizing: border-box;
+}
+.menu-bar{
+    background-color:black;
+    /* text-align: center; */
+    position: sticky;
+    top: 0px;
+    
+}
+.menu-bar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+    
+}
+.menu-bar ul li{
+   width: 120px; 
+   margin:15px;
+   padding:15px;
+   font-size:20px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:skyblue;
+    
+}
+.menu-bar ul li a:hover{
+background-color:black;
+border-radius: 3px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+display: block;
+position: absolute;
+background-color:black;
+margin-top: 15px;
+margin-left: 15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: orange;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: black;
+}
+.cartpage{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+.cartimage{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #070100;
+    font-weight: bold;
+    font-size: 18px;
+}
+td{
+    padding: 10px 5px;
+    font-weight: bold;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 7px;
+}
+td a{
+    color: rgba(174, 11, 11, 0.808);
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.totalprice{
+    display: flex;
+    justify-content: flex-end;
+}
+.totalprice table{
+    border-top: 5px solid black;
+    width: 100%;
+    max-width: 550px;
+}
+
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+/* -------------fotter------------ */
+.fotter{
+    height:312px;
+    width: 100%;
+    background-color:rgb(1, 5, 12);
+}
+.followus{
+    color: white;
+    font-style: sans-serif;
+    padding-top: 15px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left:590px;
+}
+.sociallogos{
+    display: flex;
+    justify-content: center;
+    
+}
+.logosc{
+    margin: 40px;
+    cursor: pointer;
+}
+.address{
+ margin-left:590px ;
+ margin-top:5px;
+ color: white;
+ text-decoration: underline;
+}
+.homeicon{
+    color: white;
+    margin-left: 550px;
+    margin-top: 10px;
+}
+.homeicon i{
+    padding:5px;
+}
+          </style>

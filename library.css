@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.container{
+    height:100%;
+    width:100%;
+    border: 2px solid black;
+    background-image: url(image/library.jpeg); 
+    background-position: center;
+    background-size: cover;
+    opacity: 0.95;
+}
+body{
+    box-sizing: border-box;
+}
+.menu-bar{
+    background-color:black;
+    position: sticky;
+    top: 0px;
+}
+.menu-bar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+    
+}
+.menu-bar ul li{
+   width: 120px; 
+   margin:15px;
+   padding:15px;
+   font-size:20px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:skyblue;
+    
+}
+.menu-bar ul li a:hover{
+background-color:black;
+border-radius: 3px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+display: block;
+position: absolute;
+background-color:black;
+margin-top: 15px;
+margin-left: 15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: orange;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: black;
+}
+
+/* -------menubarend-------- */
+.box{
+height:800px;
+width:100%;
+z-index: index -4;
+}
+.welcomebox{
+    height: 350px;
+    width: 70%;
+    margin-left:15%;
+    margin-top:280px;
+    background-color: rgb(93, 131, 206);
+    opacity: 0.75;
+    border-radius: 10px;
+
+}
+.note{
+    padding-top: 50px;
+    padding-left: 100px;
+    color:black;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 60px;
+}
+.para{
+    padding-top:5px;
+    padding-left:250px;
+    color:rgb(2, 0, 0);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 35px;
+}
+.searchcontainer{
+    display: flex;
+}
+.searchbox{
+    height: 40px;
+    width:70%;
+    background-color: white;
+    margin-top: 70px;
+    margin-left: 100px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.searchiconbox{
+    height: 40px;
+    width: 10%;
+    background-color: rgb(8, 8, 8);
+    margin-top: 70px;
+    border-top-right-radius:50px;
+    border-bottom-right-radius: 50px;
+}
+.Books{
+    height:280px;
+    width:95%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  background-color:  rgb(93, 131, 206);
+  border-radius: 10px;
+}
+
+.image{
+    height: 230px;
+    width: 190px;
+}
+/* ----------------fotter------------- */
+.fotter{
+    height:100%;
+    width: 100%;
+    background-color:rgb(1, 5, 12);
+}
+.followus{
+    color: white;
+    font-style: sans-serif;
+    padding-top: 15px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-left:590px;
+}
+.sociallogos{
+    display: flex;
+    justify-content: center;
+    
+}
+.logosc{
+    margin: 40px;
+    cursor: pointer;
+}
+.address{
+ margin-left:590px ;
+ margin-top:5px;
+ color: white;
+ text-decoration: underline;
+}
+.homeicon{
+    color: white;
+    margin-left: 550px;
+    margin-top: 10px;
+}
+.fotter i{
+    padding:5px;
+}

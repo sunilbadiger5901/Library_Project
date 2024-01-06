@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>food.html</title>
+  <script src="https://kit.fontawesome.com/fef843a56a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container"
+  style="height:1600px;border: 2px solid black;
+    background-image: url(image/backgrndimage.avif);
+    background-size: cover;">
+    <div class="menu-bar">
+      <ul>
+         <img style="height:100px;width:130px;" src="image/logo.png" alt="">
+          <li class="active" ><a href="library.html">Home</a></li>
+          <li><a href="library.html">About</a>
+          <div class="sub-menu-1">
+              <ul>
+                  <li><a href="missionvision.html">mission</a></li>
+                  <li><a href="missionvision.html">vision</a></li>
+                  <li><a href="news.html">News</a></li>
+              </ul>
+          </div>
+          </li>
+          <li> <a href="#"></i>Categories</a>
+              <div class="sub-menu-1">
+                  <ul>
+                      <li><a href="business.html">Business</a></li>
+                      <li class="hover-me"><a href="#">Entertainment</a><i class="fa fa-angle-right"></i>
+                      <div class="sub-menu-2">
+                          <ul>
+                              <li><a href="kids.html">Kids</a></li>
+                              <li><a href="food.html">Food</a></li>
+                              <li><a href="comic.html">Comics</a></li>
+                          </ul>  
+                      </div>
+                      </li>
+                      <li class="hover-me"><a href="#">Historic</a><i class="fa fa-angle-right"></i>
+                          <div class="sub-menu-2">
+                              <ul>
+                                  <li><a href="medievel.html">Medievel</a></li>
+                                  <li><a href="modern.html">Modern</a></li>
+                                  <li><a href="#">Early</a></li>
+                              </ul>  
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </li>
+          <li> <a href="contact.html">Contact us</a>
+              <div class="sub-menu-1">
+                  <ul>
+                      <li><a href="#">Rajarajeshwari Nagar Bengaluru-560098.</a></li>
+                      <li><a href="#">8880008881</a></li>
+                      <li><a href="#">library@gmail.com</a></li>
+                  </ul>
+              </div></li>
+          <li> <a href="#">Cart</a></li>
+          <li> <a href="login.html">Login</a></li>
+          <li> <a href="signup.html">Signup</a></li>
+      </ul>
+          </div>
+  <div class="cart-section">
+    <div class="book-item">
+      <img src="image/food5.jpg" alt="Book 1">
+      <button class="add-to-cart-btn" onclick="addToCart('Book 1')">Add to Cart</button>
+    </div>
+    <div class="book-item">
+      <img src="image/food6.webp" alt="Book 2">
+      <button class="add-to-cart-btn" onclick="addToCart('Book 2')">Add to Cart</button>
+    </div>
+    <div class="book-item">
+      <img src="image/food7.webp" alt="Book 3">
+      <button class="add-to-cart-btn" onclick="addToCart('Book 3')">Add to Cart</button>
+    </div>
+    <div class="book-item">
+      <img src="image/food8.jpg" alt="Book 4">
+      <button class="add-to-cart-btn" onclick="addToCart('Book 4')">Add to Cart</button>
+    </div>
+    <div class="book-item">
+      <img src="image/food9.jpeg" alt="Book 5">
+      <button class="add-to-cart-btn" onclick="addToCart('Book 5')">Add to Cart</button>
+    </div>
+    <div class="book-item">
+      <img src="image/food3.jpg" alt="Book 2">
+      <button class="add-to-cart-btn" onclick="addToCart('Book 2')">Add to Cart</button>
+    </div>
+  </div>
+   <div class="cart-container">
+    <h2 style="padding-left:250px; padding-top: 30px">Shopping Cart</h2>
+    <ul id="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </ul>
+  </div> 
+  <div class="fotter">
+    <div class="follow-text"> <h3>Follow us</h3></div>
+  <div class="images">
+    <img src="image/facebook.png" alt="facebook">
+    <img src="image/twitter.png" alt="facebook">
+    <img src="image/search.png" alt="facebook">
+  </div>
+  <div class="contact"><h4>Contatct Address</h4></div>
+  <div class="adress-text">
+  <i class="fa-sharp fa-solid fa-house"></i>
+Rajarajeshwari Nagar Bengaluru-560098
+<i class="fa-sharp fa-solid fa-phone"></i>
+8880008881,9990008883
+<i class="fa-sharp fa-solid fa-envelope"></i>
+mylibrary124@gmail.com
+</div>
+</div>
+  <script src="script.js">
+    const cartItems = [];
+
+function addToCart(bookName) {
+  if (cartItems.length < 5) {
+    cartItems.push(bookName);
+    updateCart();
+  } else {
+    alert("You can only add up to 5 books to the cart.");
+  }
+}
+
+function removeFromCart(index) {
+  cartItems.splice(index, 1);
+  updateCart();
+}
+
+function updateCart() {
+  const cartList = document.getElementById('cart-items');
+  cartList.innerHTML = '';
+
+  cartItems.forEach((item, index) => {
+    const cartItem = document.createElement('li');
+    cartItem.textContent = item;
+    cartItem.className = 'cart-item';
+
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'Remove';
+    removeButton.className = 'remove-btn';
+    removeButton.onclick = () => removeFromCart(index);
+
+    cartItem.appendChild(removeButton);
+    cartList.appendChild(cartItem);
+});
+}
+  </script>
+</body>
+</html>
+<style>
+  body{
+    box-sizing: border-box;
+}
+.menu-bar{
+    background-color:black;
+    /* text-align: center; */
+    position: sticky;
+    top: 0px;
+    
+}
+.menu-bar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+    
+}
+.menu-bar ul li{
+   width: 120px; 
+   margin:15px;
+   padding:15px;
+   font-size:20px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:skyblue;
+    
+}
+.menu-bar ul li a:hover{
+background-color:black;
+border-radius: 3px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+display: block;
+position: absolute;
+background-color:black;
+margin-top: 15px;
+margin-left: 15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: orange;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.book-item {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.book-item img {
+  max-width: 200px;
+  height:auto;
+}
+
+.add-to-cart-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;}
+  .cart-container{
+  height:180px;
+  width:700px;
+  background-color:skyblue;
+  margin-left:310px;
+  box-shadow:10,10,10,10;
+  border-radius: 10px;
+}
+.fotter{
+            width: 100%;
+            height:180px;
+            background-color:black;
+            margin-top:130px;
+        }
+        .follow-text{
+        padding-top:0.1px;
+        padding-left: 45%;
+        color: white;
+        font-weight: bolder;
+        }
+        .images{
+            display: flex;
+            padding-left: 35%;
+        }
+        .images img{
+            height: 20px;
+            width: 30px;
+            padding-left: 63px;
+        }
+        .contact{
+            margin-left: 43%;
+            margin-bottom: 0px;
+            color: white;
+        font-weight: bolder;
+        }
+        .adress-text{
+        margin-left: 24%;
+        margin-top: 1px;
+        color: white;
+        font-weight: bolder;
+        }
+        i{
+            padding: 8px;
+        }
+</style>

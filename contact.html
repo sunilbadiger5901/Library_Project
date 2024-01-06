@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <script src="https://kit.fontawesome.com/fef843a56a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="menu-bar">
+    <ul>
+       <img style="height:100px;width:130px;" src="image/logo.png" alt="">
+        <li class="active" ><a href="library.html">Home</a></li>
+        <li><a href="#">About</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="missionvision.html">mission</a></li>
+                <li><a href="missionvision.html">vision</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </div>
+        </li>
+        <li> <a href="#"></i>Categories</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="business.html">Business</a></li>
+                    <li class="hover-me"><a href="#">Entertainment</a><i class="fa fa-angle-right"></i>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="kids.html">Kids</a></li>
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="comic.html">Comics</a></li>
+                        </ul>  
+                    </div>
+                    </li>
+                    <li class="hover-me"><a href="#">Historic</a><i class="fa fa-angle-right"></i>
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li><a href="medievel.html">Medievel</a></li>
+                                <li><a href="modern.html">Modern</a></li>
+                                <li><a href="#">Early</a></li>
+                            </ul>  
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li> <a href="contact.html">Contact us</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Rajarajeshwari Nagar Bengaluru-560098.</a></li>
+                    <li><a href="#">8880008881</a></li>
+                    <li><a href="#">library@gmail.com</a></li>
+                </ul>
+            </div></li>
+        <li> <a href="#">Cart</a></li>
+        <li> <a href="login.html">Login</a></li>
+        <li> <a href="signup.html">Signup</a></li>
+    </ul>
+        </div>
+    <div class="box">
+    <div class="address"><h2>Contact Address</h2></div>
+    <div class="homeicon">
+      <i class="fa-sharp fa-solid fa-house"></i>
+          Rajarajeshwari Nagar Bengaluru-560098.
+    </div>
+    <div class="phoneicon">
+      <i class="fa-sharp fa-solid fa-phone"></i>
+          8880008881,9990008883
+    </div>
+    <div class="emailicon">
+      <i class="fa-sharp fa-solid fa-envelope"></i>
+          mylibrary124@gmail.com
+    </div>
+
+    <div class="sociallogos">
+        <div class="logosc">
+          <img src="/image/facebook.png" alt="facebook" style="height:30px;width: 40px;">
+        </div>
+        <div class="logosc">
+          <img src="/image/twitter.png" alt="twitter"style="height:30px;width: 40px;">
+        </div>
+        <div class="logosc">
+          <img src="/image/github-sign.png" alt="github"style="height:30px;width: 40px;">
+        </div>
+      </div>
+    
+    <style>
+      body{
+    box-sizing: border-box;
+}
+.menu-bar{
+    background-color:black;
+    /* text-align: center; */
+    position: sticky;
+    top: 0px;
+    
+}
+.menu-bar ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+    
+}
+.menu-bar ul li{
+   width: 120px; 
+   margin:15px;
+   padding:15px;
+   font-size:20px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:skyblue;
+    
+}
+.menu-bar ul li a:hover{
+background-color:black;
+border-radius: 3px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+display: block;
+position: absolute;
+background-color:black;
+margin-top: 15px;
+margin-left: 15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: orange;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: black;
+}
+        body{
+            background-image: url(image/library.jpeg);
+            background-size: cover;
+            opacity:0.90;
+        }
+        .address{
+            padding-left: 180px;
+            margin-top:5px;
+            color:white;
+            text-decoration: underline;
+        }
+        .box{
+            padding-top: 40px;
+            height:400px;
+            width: 550px;
+            background-color: rgb(93, 131, 206);
+            margin-left: 370px;
+            margin-top: 50px;
+            opacity: 0.85;
+            border-radius: 10px;
+        }
+        .homeicon{
+         color:white;
+         margin-top:40px;
+         padding-left:100px ;
+         font-size: 20px;
+         font-weight: 800;
+        }
+        .phoneicon{
+         color:white;
+         margin-top: 40px;
+         padding-left:100px ;
+         font-size: 20px;
+         font-weight: 800;
+        }
+        .emailicon{
+         color:white;
+         margin-top: 40px;
+         padding-left:100px ;
+         font-size: 20px;
+         font-weight: 800;
+        }
+        .sociallogos{
+    display: flex;
+    justify-content: center;
+    padding-top:50px;   
+}
+.logosc{
+    margin: 40px;
+    cursor: pointer;
+
+}
+    </style>
+    </div>
+</body>
+</html>
